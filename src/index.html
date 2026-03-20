@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html>
 
 <head>
@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
 </head>
-
-<body>
+<body class="h-screen flex flex-col m-0">
     <nav
         class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-        <div class="mx-auto max-w-full px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-full px-2 sm:px-6 lg:px-8 fade-up">
             <div class="relative flex h-16 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
@@ -31,7 +30,7 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex shrink-0 items-center">
-                        <img src="" alt="Project logo" class="h-8 w-auto" />
+                        <img src="pngimg.com - letter_m_PNG60.png" alt="Project logo" class="h-8 w-auto" />
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
@@ -66,7 +65,7 @@
                             command="show-modal" commandfor="drawer">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">Open user menu</span>
-                            <img src="" alt=""
+                            <img src="pngimg.com - letter_m_PNG60.png" alt=""
                                 class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
                         </button>
 
@@ -111,14 +110,14 @@
                             </button>
                         </div>
 
-                        <div class="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl max-w-lg">
+                        <div class="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl max-w-lg ">
                             <div class="px-4 sm:px-6">
                                 <div class="flex justify-between">
                                     <h2 id="drawer-title" class="text-4xl font-semibold text-gray-900 ml-9">[User Name]</h2>
-                                    <img src="" alt=""
+                                    <img src="pngimg.com - letter_m_PNG60.png" alt=""
                                         class="size-32  rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
                                 </div>
-
+                                
                             </div>
                             <div class="relative mt-6 flex-1 px-4 sm:px-6">
                                 <!-- Your content -->
@@ -129,7 +128,30 @@
             </dialog>
         </el-dialog>
 
+
+<style>
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>    
     </nav>
+<main class="grow flex justify-center"><input
+  type="text"
+  id="input"
+  name="ai_input"
+  placeholder="ask smth"
+  class="flex  bg-grayx-800 py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 sm:texts-sm/6 outline-1 border-amber-50" />
+</main>
+
 </body>
 
 </html>
