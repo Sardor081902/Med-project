@@ -30,7 +30,7 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex shrink-0 items-center">
-                        <img src="pngimg.com - letter_m_PNG60.png" alt="Project logo" class="h-8 w-auto" />
+                        <img src="pngimg.com - letter_m_PNG60.png" alt="Project logo" class="h-8 w-auto"/>
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
@@ -39,8 +39,8 @@
                                 class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">AI</a>
                             <a href="doctors.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Doctors</a>
-                            <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Treatment</a>
+                            <a href="sing in.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Sing in as a doctor</a>
                             <a href="#"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Support</a>
                         </div>
@@ -61,12 +61,12 @@
 
                     <el-dropdown class="relative ml-3">
                         <button
-                            class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                            class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 cursor-pointer"
                             command="show-modal" commandfor="drawer">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">Open user menu</span>
                             <img src="pngimg.com - letter_m_PNG60.png" alt=""
-                                class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+                                class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10 " />
                         </button>    
                    </el-dropdown>
 
@@ -122,7 +122,24 @@
                 </div>
             </dialog>
         </el-dialog>
-</nav>
+        <div id="chat_history" class="fixed sm:block hidden left-0 bg-gray-800/50 h-[calc(100dvh-64px)] w-80 top-16 " >
+            <div class="mt-16 ml-4 z-10">
+                            <a href="index.html"  
+                                class="sm:hidden block px-4 py-2 text-2xl bg-gray-950/50 text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">AI</a>
+                            <a href="doctors.html"
+                                class="sm:hidden block px-4 py-2 text-2xl text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Doctors</a>
+                            <a href="sing in.html"
+                                class="sm:hidden block px-4 py-2 text-2xl text-gray-700  focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Sing in as a doctor</a>
+                            <a href="#"  
+                                class="sm:hidden block px-4 py-2 text-2xl text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Support</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-2xl text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">chat 1</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-2xl text-gray-700  focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">chat 2</a>
+
+            </div>
+        </div>
+    </nav>
 
 
         <style>
@@ -140,26 +157,15 @@
             }
         </style>
     </nav>
-    <main class="grow flex justify-center w-[calc(100vdw-320px)] ml-80"> 
-        <div id="chat_history" class="fixed sm:block hidden left-0 bg-amber-300 h-[calc(100dvh-64px)] w-80 top-16 border-r border-black " >
-            <div class="mt-16 ml-4 z-10"> 
-                            <a href="#"  
-                                class="block px-4 py-2 text-2xl text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Your
-                                profile</a>
-                            <a href="#"
-                                class="block px-4 py-2 text-2xl text-gray-700 focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Settings</a>
-                            <a href="#"
-                                class="block px-4 py-2 text-2xl text-gray-700  focus:bg-white/5 focus:outline-hidden duration-300 hover:bg-gray-500/40 hover:scale-105 transition-all ease-in-out ">Sign
-                                out</a>
-            </div>
-        </div>
-<div class="fixed bottom-0 flex sm:left-80 sm:right-0 right-0 left-0 bg-amber-800">
+    <main class="grow flex justify-center w-[calc(100vdw-320px)] ml-80">
+
+<div class="fixed bottom-0 flex sm:left-80 sm:right-0 right-0 left-0 bg-gray-800/50 ">
             <div class="flex grow mb-5 gap-2 justify-center m-4" > 
             <input type="text" 
             id="input"
             name="ai_input" 
             placeholder="ask smth"
-            class="h-8  grow sm:text-center text-left sm:border-2 sm:rounded-full sm:ml-3 py-1.5 pr-3 pl-1 text-base  text-black  placeholder:text-gray-500 border-amber-50 "/>
+            class="h-8  grow sm:text-center text-left sm:border-2 sm:rounded-full sm:ml-3 py-1.5 pr-3 pl-1 text-base  text-black  placeholder:text-gray-500 border-black "/>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 rounded-full p-1 duration-500 hover:bg-white/50 hover:scale-110 transition-all ease-in-out">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
             </svg>

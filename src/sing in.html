@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+<body class="h-screen flex justify-center items-center bg-gray-100 m-0 fade-up" >
+ <a href="index.html"><button class="fixed left-4 top-4 border-2 border-amber-50 p-1.5 rounded-2xl text-2xl">Back</button></a>  
+    <div class="flex flex-col gap-4 p-8 w-96 bg-gray-900 rounded-xl shadow-lg">
+        <h2 class="text-white text-2xl font-bold text-center mb-2">Registration</h2>
+        
+        <input type="text" placeholder="Name" class="p-2 rounded border-none outline-none">
+        <input type="text" placeholder="Firstname" class="p-2 rounded border-none outline-none">
+        <input type="email" placeholder="Email" class="p-2 rounded border-none outline-none">
+        <input type="password" placeholder="Password" class="p-2 rounded border-none outline-none">
+        <input type="password" placeholder="Accept password" class="p-2 rounded border-none outline-none">
+        
+        <button class="mt-2 bg-white text-gray-950 font-bold py-2 rounded hover:bg-amber-50 transition">
+            Accept
+        </button>
+    </div>
+            <style>
+            .fade-up {
+                opacity: 0;
+                transform: translateY(30px);
+                animation: fadeUp 1s ease forwards;
+            }
+
+            @keyframes fadeUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+</body>
+
+</html>
