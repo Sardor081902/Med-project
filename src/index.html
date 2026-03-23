@@ -143,6 +143,18 @@
 
 
         <style>
+            .fade-upp{
+                opacity: 0;
+                transform: translateY(60px);
+                animation: fadeUpp 1s ease forwards;}
+
+            @keyframes fadeUpp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
             .fade-up {
                 opacity: 0;
                 transform: translateY(30px);
@@ -158,18 +170,21 @@
         </style>
     </nav>
     <main class="grow flex justify-center w-[calc(100vdw-320px)] ml-80">
-
-<div class="fixed bottom-0 flex sm:left-80 sm:right-0 right-0 left-0 bg-gray-800/50 ">
+<div class="h-auto w-auto sm:blok hidden bg-gray-800/50 fixed right-16 top-20 rounded-lg p-2 fade-upp"id="question"  >
+</div>
+<div class="h-auto w-auto sm:blok hidden p-2 bg-gray-800/50 fixed left-1/5 top-40 rounded-lg fade-upp"id="answer"  >
+    <h2 >it's just a mockup, it doesn't work</h2>
+</div>
+<div class="fixed bottom-0 flex sm:left-80 sm:right-0 right-0 left-0 bg-gray-800/50 border-t border-gray-50 ">
             <div class="flex grow mb-5 gap-2 justify-center m-4" > 
             <input type="text" 
             id="input"
             name="ai_input" 
             placeholder="ask smth"
-            class="h-8  grow sm:text-center text-left sm:border-2 sm:rounded-full sm:ml-3 py-1.5 pr-3 pl-1 text-base  text-black  placeholder:text-gray-500 border-black "/>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 rounded-full p-1 duration-500 hover:bg-white/50 hover:scale-110 transition-all ease-in-out">
+            class="h-8  grow sm:text-center text-left sm:border-2 sm:rounded-full sm:ml-3 py-1.5 pr-3 pl-1 text-base  text-black  placeholder:text-gray-500  border-gray-950 "/>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="send" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 rounded-full p-1 duration-500 hover:bg-white/50 hover:scale-110 transition-all ease-in-out">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
             </svg>
-
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 rounded-full p-1 duration-500 hover:bg-white/50 hover:scale-110 transition-all ease-in-out  ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
             </svg>
