@@ -5,6 +5,7 @@ const send = document.querySelector("#send")
 const letter = document.querySelector("#question")
 const answer = document.querySelector("#answer")
 
+if(send||letter||answer){ 
 send.addEventListener('click', () => {
     letter.classList.toggle("hidden")
     let val = input.value.trim(); 
@@ -17,10 +18,11 @@ send.addEventListener('click', () => {
         answer.classList.toggle("hidden")   
     }, 1000);
 });
-
 input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') send.click();
 });
+
+}
 
 btn.addEventListener('click', () => {
     if (!btn || !sidebar) return;
